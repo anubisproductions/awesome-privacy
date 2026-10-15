@@ -1640,18 +1640,6 @@ categories:
           and advanced ways to block access to the internet, where applications and addresses
           can individually be allowed or denied access to your Wi-Fi and/or mobile connection.
 
-      - name: Data Saver
-        url: https://anubisproductions.github.io/data-saver-usage-blocker/
-        github: anubisproductions/data-saver-usage-blocker
-        icon: https://raw.githubusercontent.com/anubisproductions/data-saver-usage-blocker/main/fastlane/metadata/android/en-US/images/icon.png
-        androidApp: com.anubisproductions.datagate
-        description: |
-          Shows which apps spend your mobile data, split into foreground and background,
-          and lets you block them per network - an app can be blocked on mobile data while
-          left working normally on Wi-Fi. It ships without the INTERNET permission, so it is
-          incapable of sending anything anywhere, and blocking uses VpnService in package-list
-          mode with no packet forwarding or remote server.
-
       - name: Island
         url: https://island.oasisfeng.com/
         github: oasisfeng/island
@@ -1836,6 +1824,15 @@ categories:
         androidApp: dev.thomasbuilds.spectre
         description: |
           A radio frequency scanner app for Android with recon and offensive capabilities.
+
+      - name: Data Saver
+        url: https://anubisproductions.github.io/data-saver-usage-blocker/
+        github: anubisproductions/data-saver-usage-blocker
+        openSource: true
+        icon: https://raw.githubusercontent.com/anubisproductions/data-saver-usage-blocker/main/fastlane/metadata/android/en-US/images/icon.png
+        androidApp: com.anubisproductions.datagate
+        description: |
+          Shows which apps spend your mobile data, foreground and background separately, and blocks them per network. Ships with no INTERNET permission, so it cannot transmit at all.
 
       wordOfWarning: |
         Too many installed apps will increase your attack surface - only install applications that you need.
